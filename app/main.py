@@ -1,9 +1,11 @@
 from fastapi import FastAPI, Request
-from pdf_parser import parse_and_chunk
-from ner_topic import enrich_chunks
-from vector_store import store_enriched_chunks
-from rag_pipeline import load_db, answer_query,similarity_search
+from app.pdf_parser import parse_and_chunk
+from app.ner_topic import enrich_chunks
+from app.vector_store import store_enriched_chunks
+from app.rag_pipeline import load_db, answer_query,similarity_search
 import os
+
+
 from contextlib import asynccontextmanager
 from typing import AsyncIterator
 import uvicorn

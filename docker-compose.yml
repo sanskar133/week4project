@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    image: week4project
+    container_name: week4container
+    ports:
+      - "8000:8000"
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    restart: always
+
+  hello-world:
+    image: hello-world
+    container_name: confident_margulis
+    restart: "no"

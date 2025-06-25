@@ -1,0 +1,13 @@
+PyPDF2
+spacy
+langchain
+faiss-cpu
+
+bertopic
+tqdm
+google-generativeai
+fastapi
+uvicorn
+sentence-transformers
+python-dotenv
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
